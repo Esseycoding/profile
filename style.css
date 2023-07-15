@@ -10,6 +10,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  cursor: none;
   background: url(https://i.pinimg.com/736x/5b/31/ef/5b31efbe088aa192e9fe602920dae242.jpg);
   background-size: cover;
 }
@@ -202,4 +203,21 @@ body {
 .row:nth-child(2):hover i.fa-comment {
   opacity: 1;
   pointer-events: auto;
+}
+.cursor {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  animation: cursorAnim .5s infinite alternate;
+}
+
+@keyframes cursorAnim{
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(.7)
+  }
 }
